@@ -1,0 +1,110 @@
+.octodex {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 0;
+  /*border: 1px solid red; red borders to see wut im doin' */
+  font-size: 0;
+}
+
+.octocat {
+  display: inline-block;
+  position: relative;
+  /*border: 1px solid red;*/
+  width: 444px;
+  margin: 0 11px;
+  font-size: 16px;
+}
+
+.octocat:first-child {
+  margin-left: 0;
+}
+.octocat:last-child {
+  margin-right: 0;
+}
+
+.octocat img {
+  width: 100%;
+  border: 1px solid #cacaca;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* image-footer group */
+
+.image-footer {
+  position: relative;
+  height: 50px;
+  border-bottom: 1px solid #cacaca;
+  font-weight: bold;
+  color: #777777;
+  margin-top: -4px;
+}
+
+.image-footer:before {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 7px;
+  border: 8px solid transparent;
+  border-top-color: #cacaca;
+}
+
+/* clearfix */
+.image-footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.image-number {
+  color: #cacaca;
+  line-height: 50px;
+  float: left;
+}
+
+.image-number:before {
+  content: '#';
+}
+
+.image-caption {
+  display: inline-block;
+  line-height: 50px;
+  float: right;
+}
+
+.image-caption a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.image-caption span {
+
+}
+
+/* authors info */
+.authors {
+  display: inline-block;
+  padding: 0;
+}
+
+.authors li {
+  display: inline-block;
+  line-height: 50px;
+}
+
+/*.authors li a:before {
+  content: "";
+  border: 10px solid red;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}*/
+
+.authors img {
+  vertical-align: middle;
+  width: 28px;
+  height: 28px;
+}
