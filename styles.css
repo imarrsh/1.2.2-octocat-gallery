@@ -1,25 +1,24 @@
 .octodex {
-  width: 1400px;
-  margin: 0 auto;
+  max-width: 1376px;
+  margin: 30px auto 0;
   padding: 0;
-  /*border: 1px solid red; red borders to see wut im doin' */
   font-size: 0;
 }
 
 .octocat {
   display: inline-block;
   position: relative;
-  /*border: 1px solid red;*/
   width: 444px;
-  margin: 0 11px;
+  margin: 11px 11px;
   font-size: 16px;
 }
 
-.octocat:first-child {
-  margin-left: 0;
-}
-.octocat:last-child {
+.octocat:nth-child(3n) {
   margin-right: 0;
+}
+
+.octocat:nth-child(3n+1) {
+  margin-left: 0;
 }
 
 .octocat img {
@@ -95,16 +94,36 @@
   line-height: 50px;
 }
 
-/*.authors li a:before {
-  content: "";
-  border: 10px solid red;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-}*/
-
 .authors img {
   vertical-align: middle;
   width: 28px;
   height: 28px;
+}
+
+@media screen and (max-width: 1380px) {
+
+  .octodex {
+    max-width: 915px;
+  }
+  .octocat:nth-child(even){
+    margin-right: 0;
+    margin-left: 11px;
+  }
+
+  .octocat:nth-child(odd){
+    margin-left: 0;
+    margin-right: 11px;
+  }
+
+}
+
+@media screen and (max-width: 920px) {
+
+  .octocat,
+  .octocat:nth-child(even),
+  .octocat:nth-child(odd) {
+    display: block;
+    margin: 20px auto;
+  }
+
 }
