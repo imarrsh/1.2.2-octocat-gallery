@@ -127,3 +127,19 @@
   }
 
 }
+
+@media screen and (max-width: 450px) {
+  .octodex {
+    padding: 0 20px;
+  }
+  
+  .octocat {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .image-footer {
+    height: auto;
+  }
+
+}
